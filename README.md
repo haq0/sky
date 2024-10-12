@@ -42,7 +42,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Acknowledgements
 
-- List any libraries, tools, or resources you've used
 
 ## Contact
 
