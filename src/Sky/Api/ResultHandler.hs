@@ -7,11 +7,10 @@ module Sky.Api.ResultHandler
 import Data.Aeson
 import Data.Aeson.Types (Parser, parse)
 import qualified Data.HashMap.Strict as HMS
-import Data.Maybe (fromMaybe)
 import qualified Data.Text as T
 
 import Control.Monad ((>=>))
-import Sky.Api.Podcast (Language(..), Podcast(..), toLang)
+import Sky.Api.Podcast (Podcast(..), toLang)
 
 parsePodcast :: Object -> Parser Podcast
 parsePodcast res =

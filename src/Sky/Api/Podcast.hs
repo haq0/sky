@@ -22,7 +22,7 @@ toLang f
   | f == pack "es" = ES
   | f == pack "fr" = FR
   | f == pack "de" = DE
-  | otherwise = EN
+  | otherwise = NONE
 
 data Podcast = Podcast
   { title :: Text
