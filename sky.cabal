@@ -27,6 +27,7 @@ library
   exposed-modules:
       Sky
       Sky.Api
+      Sky.Api.Handler
       Sky.Api.Podcast
       Sky.Api.ResultHandler
       Sky.TUI
@@ -39,7 +40,15 @@ library
       aeson
     , base >=4.7 && <5
     , bytestring
+    , case-insensitive
+    , crypton
+    , http-client
+    , http-client-tls
+    , http-conduit
+    , http-types
+    , memory
     , text
+    , time
     , unordered-containers
   default-language: Haskell2010
 
@@ -54,8 +63,16 @@ executable sky-exe
       aeson
     , base >=4.7 && <5
     , bytestring
+    , case-insensitive
+    , crypton
+    , http-client
+    , http-client-tls
+    , http-conduit
+    , http-types
+    , memory
     , sky
     , text
+    , time
     , unordered-containers
   default-language: Haskell2010
 
@@ -71,7 +88,15 @@ test-suite sky-test
       aeson
     , base >=4.7 && <5
     , bytestring
+    , case-insensitive
+    , crypton
+    , http-client
+    , http-client-tls
+    , http-conduit
+    , http-types
+    , memory
     , sky
     , text
+    , time
     , unordered-containers
   default-language: Haskell2010

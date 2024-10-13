@@ -25,7 +25,14 @@ dependencies:
 - text
 - bytestring
 - unordered-containers
-
+- http-client
+- http-client-tls
+- http-conduit
+- memory
+- crypton
+- time
+- case-insensitive
+- http-types
 ghc-options:
 - -Wall
 - -Wcompat
@@ -61,3 +68,4 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - sky
+
